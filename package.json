@@ -5,12 +5,12 @@
   "license": "MIT",
   "repository": "https://github.com/witt3rd/tensorflowjs",
   "author": {
-    "name": "donald",
+    "name": "Donald Thompson",
     "email": "witt3rd@witt3rd.com",
     "url": "http://witt3rd.com"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "scripts": {
     "precommit": "remove-lockfiles && lint-staged",
@@ -26,13 +26,13 @@
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-jest": "^22.0.4",
+    "babel-jest": "^23.0.1",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "husky": "^0.14.3",
-    "jest": "^22.0.4",
-    "lint-staged": "^7.0.0",
-    "remove-lockfiles": "^2.0.4",
+    "jest": "^23.1.0",
+    "lint-staged": "^7.2.0",
+    "remove-lockfiles": "^2.1.3",
     "rimraf": "^2.6.2",
     "xo": "^0.20.3"
   },
