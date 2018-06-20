@@ -23,4 +23,4 @@ Sample code is maintained in the [tensorflowjs repo](https://github.com/witt3rd/
 
 ## License
 
-MIT &copy; [Donald Thompson](http://witt3rd.com)
+MIT &copy; 2018 [Donald Thompson](http://witt3rd.com)
