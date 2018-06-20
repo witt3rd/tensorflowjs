@@ -1,0 +1,70 @@
+{
+  "name": "tensorflowjs",
+  "version": "0.0.0",
+  "description": "explorations of deep learning using TensorFlowJS",
+  "license": "MIT",
+  "repository": "https://github.com/witt3rd/tensorflowjs",
+  "author": {
+    "name": "donald",
+    "email": "witt3rd@witt3rd.com",
+    "url": "http://witt3rd.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "precommit": "remove-lockfiles && lint-staged",
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist --copy-files --ignore *.test.js",
+    "test:watch": "jest --watch",
+    "test": "xo && jest --coverage"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.0.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "husky": "^0.14.3",
+    "jest": "^22.0.4",
+    "lint-staged": "^7.0.0",
+    "remove-lockfiles": "^2.0.4",
+    "rimraf": "^2.6.2",
+    "xo": "^0.20.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "xo --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "singleQuote": true
+  },
+  "xo": {
+    "envs": [
+      "jest"
+    ],
+    "prettier": true,
+    "space": true
+  },
+  "keywords": []
+}
