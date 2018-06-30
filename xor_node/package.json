@@ -26,7 +26,7 @@
     "dist"
   ],
   "dependencies": {
-    "@tensorflow/tfjs": "^0.11.6",
+    "@tensorflow/tfjs": "^0.11.7",
     "@tensorflow/tfjs-node": "^0.1.7",
     "@tensorflow/tfjs-node-gpu": "^0.1.7"
   },
